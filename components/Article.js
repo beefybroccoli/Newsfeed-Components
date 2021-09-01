@@ -154,9 +154,7 @@ Step 3: Don't forget to return something from your function!
 */
   //add children to parent
   [tag_h2, tag_p_date, tag_p_1st, tag_p_2nd, tag_p_3rd, tag_span].forEach(
-    (child) => {
-      tag_div.appendChild(child);
-    }
+    (child) => tag_div.appendChild(child)
   );
   return tag_div;
 };
