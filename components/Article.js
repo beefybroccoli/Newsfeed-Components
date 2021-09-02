@@ -165,7 +165,7 @@ const articleMaker = ({
   });
 
   tag_button_close_article.addEventListener("click", () => {
-    tag_div.classList.toggle(".close");
+    tag_div.classList.toggle("close");
   });
 
   //Step 3: Don't forget to return something from your function!
