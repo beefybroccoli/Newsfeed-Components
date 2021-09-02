@@ -151,6 +151,11 @@ const articleMaker = ({
     classArray: ["expandButton"],
   });
 
+  const tag_button_close_article = create_tag({
+    type: "button",
+    textContent: "Close Article",
+  });
+
   /*
   Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.
@@ -159,13 +164,22 @@ const articleMaker = ({
     tag_div.classList.toggle("article-open");
   });
 
-  /*
-Step 3: Don't forget to return something from your function!
-*/
+  tag_button_close_article.addEventListener("click", () => {
+    tag_div.classList.toggle(".close");
+  });
+
+  //Step 3: Don't forget to return something from your function!
+
   //add children to parent
-  [tag_h2, tag_p_date, tag_p_1st, tag_p_2nd, tag_p_3rd, tag_span].forEach(
-    (child) => tag_div.appendChild(child)
-  );
+  [
+    tag_h2,
+    tag_p_date,
+    tag_p_1st,
+    tag_p_2nd,
+    tag_p_3rd,
+    tag_span,
+    tag_button_close_article,
+  ].forEach((child) => tag_div.appendChild(child));
   return tag_div;
 };
 
