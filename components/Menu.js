@@ -1,5 +1,6 @@
-// This is the data we will be using, study it but don't change anything, yet.
+import { create_tag } from "./factory";
 
+// This is the data we will be using, study it but don't change anything, yet.
 let menuItems = [
   "Students",
   "Faculty",
@@ -22,17 +23,15 @@ const menuMaker = (menuItems) => {
   The 'menuMaker' takes an array of menu items as its only argument.
 */
 
-  const tag_div = document.createElement("div");
-  tag_div.classList.add(...["menu"]);
-  const tag_ul = document.createElement("ul");
+  const tag_div = create_tag({ type: "div", classArray: ["menu"] });
+  const tag_ul = create_tag({ type: "ul" });
 
   /*
   Step 2: Inside the function, iterate over the array creating a list item <li> element for each item in the array.
   Add those items to the <ul>
 */
   Array.from(menuItems).forEach((element) => {
-    const tag_li = document.createElement("li");
-    tag_li.textContent = element;
+    const tag_li = create_tag({ type: "li", textContent: element });
     tag_ul.appendChild(tag_li);
   });
 
@@ -62,3 +61,15 @@ const menuMaker = (menuItems) => {
 const temp_menu = menuMaker(menuItems);
 const tag_header = document.querySelector(".header");
 tag_header.appendChild(temp_menu);
+
+/*
+
+  const tag_div = document.createElement("div");
+  tag_div.classList.add(...["menu"]);
+
+  const tag_ul = document.createElement("ul");
+
+  const tag_li = document.createElement("li");
+    tag_li.textContent = element;
+
+*/
