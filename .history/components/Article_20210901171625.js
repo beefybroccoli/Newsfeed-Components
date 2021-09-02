@@ -120,6 +120,7 @@ const articleMaker = ({
   const tag_h2 = create_tag({ type: "h2", textContent: title });
 
   //create tag p
+
   const tag_p_date = create_tag({
     type: "p",
     textContent: date,
@@ -127,24 +128,34 @@ const articleMaker = ({
   });
 
   //create tag p
+
   const tag_p_1st = create_tag({
     type: "p",
     textContent: firstParagraph,
   });
 
   //create tag p
+
+
   const tag_p_2nd = create_tag({
     type: "p",
     textContent: secondParagraph,
   });
 
   //create tag p
+  // const tag_p_3rd = document.createElement("p");
+  // tag_p_3rd.textContent = thirdParagraph;
+
   const tag_p_3rd = create_tag({
     type: "p",
     textContent: thirdParagraph,
   });
 
   //create tag span
+  // const tag_span = document.createElement("span");
+  // tag_span.classList.add(...["expandButton"]);
+  // tag_span.textContent = "+";
+
   const tag_span = create_tag({
     type: "span",
     textContent: "+",
@@ -200,13 +211,7 @@ long code
   const tag_p_1st = document.createElement("p");
   tag_p_1st.textContent = firstParagraph;
 
-  const tag_p_2nd = document.createElement("p");
-  tag_p_2nd.textContent = secondParagraph;
-  
-  const tag_p_3rd = document.createElement("p");
-  tag_p_3rd.textContent = thirdParagraph;
+    // const tag_p_2nd = document.createElement("p");
+  // tag_p_2nd.textContent = secondParagraph;
 
-  const tag_span = document.createElement("span");
-  tag_span.classList.add(...["expandButton"]);
-  tag_span.textContent = "+";
 */

@@ -114,12 +114,19 @@ const articleMaker = ({
 
 */
   //create tag div with class, "article"
-  const tag_div = create_tag({ type: "div", classArray: ["article"] });
+   const tag_div = create_tag({ type: "div", classArray: ["article"] });
 
   // create tag h2
+  // const tag_h2 = document.createElement("h2");
+  // tag_h2.textContent = title;
+
   const tag_h2 = create_tag({ type: "h2", textContent: title });
 
   //create tag p
+  // const tag_p_date = document.createElement("p");
+  // tag_p_date.classList.add(...["date"]);
+  // tag_p_date.textContent = date;
+
   const tag_p_date = create_tag({
     type: "p",
     textContent: date,
@@ -127,24 +134,37 @@ const articleMaker = ({
   });
 
   //create tag p
+  // const tag_p_1st = document.createElement("p");
+  // tag_p_1st.textContent = firstParagraph;
+
   const tag_p_1st = create_tag({
     type: "p",
     textContent: firstParagraph,
   });
 
   //create tag p
+  // const tag_p_2nd = document.createElement("p");
+  // tag_p_2nd.textContent = secondParagraph;
+
   const tag_p_2nd = create_tag({
     type: "p",
     textContent: secondParagraph,
   });
 
   //create tag p
+  // const tag_p_3rd = document.createElement("p");
+  // tag_p_3rd.textContent = thirdParagraph;
+
   const tag_p_3rd = create_tag({
     type: "p",
     textContent: thirdParagraph,
   });
 
   //create tag span
+  // const tag_span = document.createElement("span");
+  // tag_span.classList.add(...["expandButton"]);
+  // tag_span.textContent = "+";
+
   const tag_span = create_tag({
     type: "span",
     textContent: "+",
@@ -187,26 +207,9 @@ Array.from(data).forEach((element) => {
 
 /*
 long code
- const tag_div = document.createElement("div");
- tag_div.classList.add(...["article"]);
+ // const tag_div = document.createElement("div");
+  // tag_div.classList.add(...["article"]);
 
-  const tag_h2 = document.createElement("h2");
-  tag_h2.textContent = title;
-
-  const tag_p_date = document.createElement("p");
-  tag_p_date.classList.add(...["date"]);
-  tag_p_date.textContent = date;
-
-  const tag_p_1st = document.createElement("p");
-  tag_p_1st.textContent = firstParagraph;
-
-  const tag_p_2nd = document.createElement("p");
-  tag_p_2nd.textContent = secondParagraph;
   
-  const tag_p_3rd = document.createElement("p");
-  tag_p_3rd.textContent = thirdParagraph;
 
-  const tag_span = document.createElement("span");
-  tag_span.classList.add(...["expandButton"]);
-  tag_span.textContent = "+";
 */

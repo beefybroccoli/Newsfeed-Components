@@ -145,6 +145,8 @@ const articleMaker = ({
   });
 
   //create tag span
+
+
   const tag_span = create_tag({
     type: "span",
     textContent: "+",
@@ -206,7 +208,7 @@ long code
   const tag_p_3rd = document.createElement("p");
   tag_p_3rd.textContent = thirdParagraph;
 
-  const tag_span = document.createElement("span");
-  tag_span.classList.add(...["expandButton"]);
-  tag_span.textContent = "+";
+    // const tag_span = document.createElement("span");
+  // tag_span.classList.add(...["expandButton"]);
+  // tag_span.textContent = "+";
 */
